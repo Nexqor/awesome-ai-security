@@ -25,6 +25,7 @@
 - [Offensive Tools / Red Teaming](#offensive-tools--red-teaming)
 - [Defensive Tools / Guardrails](#defensive-tools--guardrails)
 - [Model Supply Chain](#model-supply-chain)
+- [MCP & Agent Tooling Security](#mcp--agent-tooling-security)
 - [Benchmarks & Evaluations](#benchmarks--evaluations)
 - [Key Papers](#key-papers)
 - [Practice Labs & CTFs](#practice-labs--ctfs)
@@ -63,6 +64,14 @@
 - [ModelScan](https://github.com/protectai/modelscan) - Scans model files (pickle, H5, SavedModel) for unsafe code.
 - [Safetensors](https://github.com/huggingface/safetensors) - Safe tensor storage format that cannot execute code on load.
 - Rule of thumb: never `torch.load()` an untrusted checkpoint. Pickle deserialization = arbitrary code execution.
+
+## MCP & Agent Tooling Security
+
+- [MCPTox](https://arxiv.org/abs/2508.14925) - Benchmark for tool poisoning attacks on real-world MCP servers.
+- [CSA: MCP tool description poisoning](https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-description-poisoning-20260711-cs/) - How poisoned tool descriptions exfiltrate data.
+- [CSA: MCP tool poisoning & IDE auto-execution](https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-poisoning-auto-execution-20260701/) - Auto-loaded workspace configs as an attack path.
+- [Playbook 09: MCP Tool Poisoning](https://github.com/Nexqor/ai-attack-playbook/blob/main/09-mcp-tool-poisoning.md) - Attack chain, detection and defenses.
+- [AI Agent Security Checklist](https://nexqor.github.io/checklist.html) - 24 checks with a live score.
 
 ## Benchmarks & Evaluations
 
@@ -107,6 +116,12 @@
 | 2026-11-08 | RCE in SGLang inference engine exploited on a NEAR AI server | Inference infra RCE | [CSA CISO Briefing](https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261111/) |
 | 2026-11-09 | Fireworks AI breach widens: model weights, datasets and Notion AI chats accessed | LLMjacking / data breach | [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html) |
 | 2026-11-16 | Amazon reports AI agents scanning for API keys in LiteLLM, Dify, Ollama and other apps | Credential hunting | [The Hacker News](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html) |
+| 2026-07 | Poisoned MCP tool descriptions as a silent exfiltration path; IDEs auto-loading workspace MCP configs | MCP tool poisoning | [CSA](https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-tool-description-poisoning-20260711-cs/) |
+| 2026-10 | Microsoft DDR 2026 describes JADEPUFFER, a fully autonomous ransomware attack (July 2026) | Autonomous ransomware | [Tech Times](https://www.techtimes.com/articles/328467/20261002/microsoft-2026-security-report-autonomous-ransomware-has-hacked-real-organizations.htm) |
+| 2026-11 | Copilot in Visual Studio/SSMS: filename trick reaches agent's own MCP config, RCE (patched) | Coding agent RCE | [Adversa AI](https://adversa.ai/blog/top-ai-coding-agent-security-resources-november-2026/) |
+| 2026-11-18 | "TheMailer" phishing kit uses LLMs to write a unique lure per victim | AI phishing | [SC Media](https://scworld.com/brief/new-ai-powered-phishing-kit-automates-malicious-email-campaigns) |
+| 2026-11-19 | Coinbase blocks $4.7M sent to a deepfake Elon Musk livestream | Deepfake fraud | [SC Media](https://www.scworld.com/brief/coinbase-blocks-4-7-million-in-cryptocurrency-transfers-linked-to-deepfake-scam) |
+| 2026-11-20 | GAO assessment: AI scales phishing, deepfakes and multi-stage attacks | Policy | [GAO](https://www.gao.gov/assets/gao-27-108458.pdf) |
 
 ## Related Nexqor Projects
 

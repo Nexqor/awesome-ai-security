@@ -10,9 +10,10 @@
 </p>
 
 <p align="center">
-  <a href="https://nexqor.github.io"><img src="https://img.shields.io/badge/site-nexqor.github.io-ff2f2f?style=for-the-badge" alt="site"/></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"/></a>
+  <a href="https://nexqor.github.io"><img src="https://img.shields.io/badge/site-nexqor.github.io-c41237?style=for-the-badge" alt="site"/></a>
   <a href="https://x.com/whyNexqor"><img src="https://img.shields.io/badge/X-@whyNexqor-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"/></a>
-  <img src="https://img.shields.io/badge/PRs-welcome-ff2f2f?style=for-the-badge" alt="PRs welcome"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-c41237?style=for-the-badge" alt="PRs welcome"/>
 </p>
 
 > AI is the new attack surface. This list is maintained by [Nexqor](https://github.com/Nexqor) and updated as new attacks, tools and incidents appear.

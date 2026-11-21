@@ -112,7 +112,7 @@
 | Date | Incident | Class | Source |
 |------|----------|-------|--------|
 | 2026-05 | Prompt injection in Semantic Kernel could escalate to host-level RCE; patched by removing the exposed tool | Agent framework RCE | [Microsoft](https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/) |
-| 2026 | "Comment and Control": one injection leaked secrets from three AI coding agents | Prompt injection | [VentureBeat](https://venturebeat.com/security/ai-agent-runtime-security-system-card-audit-comment-and-control-2026) |
+| 2026-04-21 | "Comment and Control": one injection leaked secrets from three AI coding agents | Prompt injection | [VentureBeat](https://venturebeat.com/security/ai-agent-runtime-security-system-card-audit-comment-and-control-2026) |
 | 2026 | LiteLLM `/key/regenerate` flaw (CVE-2026-40217) used to escalate to proxy admin in LLMjacking | LLMjacking | [The Hacker News](https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html) |
 | 2026-11-08 | RCE in SGLang inference engine exploited on a NEAR AI server | Inference infra RCE | [CSA CISO Briefing](https://labs.cloudsecurityalliance.org/research/ciso-daily-briefing-20261111/) |
 | 2026-11-09 | Fireworks AI breach widens: model weights, datasets and Notion AI chats accessed | LLMjacking / data breach | [The Hacker News](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html) |
